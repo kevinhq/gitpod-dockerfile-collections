@@ -35,8 +35,5 @@ RUN curl -sSL https://rvm.io/mpapis.asc | gpg --import - \
         rvm requirements \
         && rvm install 2.6.2 \
         && rvm use 2.6.2 --default \
-        && rvm rubygems current \
-        && gem install bundler --no-document \
-        && gem install solargraph --no-document" \
     && echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*' >> /home/gitpod/.bashrc.d/70-ruby
 ENV GEM_HOME=/workspace/.rvm
