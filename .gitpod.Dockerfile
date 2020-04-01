@@ -6,8 +6,7 @@ RUN apt-get update
 RUN apt-get update && \
     apt-get install -yq build-essential sudo vim wget links curl rsync bc git git-core apt-transport-https libxml2 \
         libxml2-dev libcurl4-openssl-dev openssl sqlite3 libsqlite3-dev gawk libreadline6-dev libyaml-dev autoconf \
-        libgdbm-dev libncurses5-dev automake zlib1g-dev libgmp-dev libssl-dev libmysqlclient-dev libp
-        q-dev gnupg2 && \
+        libgdbm-dev libncurses5-dev automake zlib1g-dev libgmp-dev libssl-dev libmysqlclient-dev libpq-dev gnupg2 && \
     rm -rf /var/lib/apt/lists/*
 
 ### Gitpod user ###
