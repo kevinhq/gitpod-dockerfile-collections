@@ -48,9 +48,9 @@ RUN curl -sSL https://rvm.io/mpapis.asc | gpg --import - \
     && curl -fsSL https://get.rvm.io | bash -s stable \
     && bash -lc " \
         rvm requirements \
-        && rvm install 2.3.8 \
+        && rvm install 'ruby-2.3.8' \
         && rvm use 2.3.8 \
-        && rvm rubygems current \
+        && rvm rubygems 2.5.2.3 \
         && rvm gemset create thl \
         && rvm gemset use thl \
         && gem install bundler --no-document" \
